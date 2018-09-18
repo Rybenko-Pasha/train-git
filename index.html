@@ -7,6 +7,17 @@
     <title>Test git</title>
 </head>
 <body>
-    
+    <h1>Add new function</h1>
+    <script>
+        function addInfoToConsoleLog(str) {
+            console.log(str);
+        }
+        function getContentFromH1() {
+            let str = document.querySelector('h1').innerHTML;
+            return str;
+        }
+        addInfoToConsoleLog(getContentFromH1());
+    </script>
+
 </body>
 </html>
